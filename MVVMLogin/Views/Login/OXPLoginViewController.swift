@@ -11,12 +11,22 @@ import SnapKit
 
 class OXPLoginViewController: OXPBaseViewController {
 
+    var viewModel:OXPLoginViewModel!
     let userTipLabel = UILabel()
     let userTextFiled = UITextField()
     let passwordTipLabel = UILabel()
     let passwordTextFiled = UITextField()
     let loginButton = UIButton()
     let activityView = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.gray)
+    
+    init(viewModel: OXPLoginViewModel) {
+        super.init()
+        self.viewModel = viewModel;
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -100,5 +110,34 @@ class OXPLoginViewController: OXPBaseViewController {
         loginButton.setTitle("登录", for: UIControlState.normal)
     }
 
+    override func createEvents() {
+        //双向绑定
+        (userTextFiled.rx.text <-> viewModel.name).addDisposableTo(self.disposeBag)
+        (passwordTextFiled.rx.text <-> viewModel.password).addDisposableTo(self.disposeBag)
+        loginButton.rx.tap.bindTo(viewModel.loginButtonDidTap).addDisposableTo(self.disposeBag);
+        viewModel.loginActionResult.asObservable().subscribe{
+            print($0)
+            }.addDisposableTo(self.disposeBag)
+        
+        viewModel
+        .activityIndicator.asDriver()
+        .debug()
+        .distinctUntilChanged()
+        .drive(self.activityView.rx.isAnimating)
+        .addDisposableTo(self.disposeBag)
+        
+//        viewModel
+//        .activityIndicator.asDriver()
+//        .debug()
+//        .distinctUntilChanged()
+//        .drive(onNext: { [unowned self] active in
+//                    if (active){
+//                        self.activityView.startAnimating()
+//                    } else {
+//                        self.activityView.stopAnimating()
+//                    }
+//                })
+//        .addDisposableTo(self.disposeBag)
+    }
 }
 
