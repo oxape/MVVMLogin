@@ -16,6 +16,8 @@
 		2B07C6081E45B46600DBF1A4 /* OXPLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07C6071E45B46600DBF1A4 /* OXPLoginViewModel.swift */; };
 		2B07C60D1E45B6D700DBF1A4 /* OXPBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07C60A1E45B6D700DBF1A4 /* OXPBaseViewController.swift */; };
 		2B07C60E1E45B6D700DBF1A4 /* OXPLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07C60C1E45B6D700DBF1A4 /* OXPLoginViewController.swift */; };
+		2B07C6141E45B88700DBF1A4 /* ObservableConvertibleType+Void.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07C6121E45B88700DBF1A4 /* ObservableConvertibleType+Void.swift */; };
+		2B07C6151E45B88700DBF1A4 /* RxOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07C6131E45B88700DBF1A4 /* RxOperators.swift */; };
 		8B78D0DC11EF2E6858E46DE0 /* Pods_MVVMLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0613E12DEC119901E02CCB8C /* Pods_MVVMLogin.framework */; };
 		A77E7AD0B41F727B364461C5 /* Pods_MVVMLoginUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC28335941AD8D72D6780AD1 /* Pods_MVVMLoginUITests.framework */; };
 		ED2C635644793C368FA72BE4 /* Pods_MVVMLoginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963965025A11D1002E2265DE /* Pods_MVVMLoginTests.framework */; };
@@ -43,7 +45,7 @@
 		1285F13D6D7CD59FDAAFC99B /* Pods-MVVMLoginTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMLoginTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMLoginTests/Pods-MVVMLoginTests.release.xcconfig"; sourceTree = "<group>"; };
 		2AD4929DFFA169FA0BBBB97C /* Pods-MVVMLoginUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMLoginUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMLoginUITests/Pods-MVVMLoginUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2B07C5D11E45B1D800DBF1A4 /* MVVMLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B07C5D41E45B1D800DBF1A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2B07C5D41E45B1D800DBF1A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		2B07C5D91E45B1D800DBF1A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2B07C5DB1E45B1D800DBF1A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B07C5DE1E45B1D800DBF1A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +59,8 @@
 		2B07C6071E45B46600DBF1A4 /* OXPLoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OXPLoginViewModel.swift; sourceTree = "<group>"; };
 		2B07C60A1E45B6D700DBF1A4 /* OXPBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OXPBaseViewController.swift; sourceTree = "<group>"; };
 		2B07C60C1E45B6D700DBF1A4 /* OXPLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OXPLoginViewController.swift; sourceTree = "<group>"; };
+		2B07C6121E45B88700DBF1A4 /* ObservableConvertibleType+Void.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ObservableConvertibleType+Void.swift"; sourceTree = "<group>"; };
+		2B07C6131E45B88700DBF1A4 /* RxOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxOperators.swift; sourceTree = "<group>"; };
 		3CC48564CE5550602E04528F /* Pods-MVVMLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMLogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMLogin/Pods-MVVMLogin.release.xcconfig"; sourceTree = "<group>"; };
 		47E159BCC3FFB1508A3E9577 /* Pods-MVVMLoginUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMLoginUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMLoginUITests/Pods-MVVMLoginUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9633A172D1F98AB98E4AF7E0 /* Pods-MVVMLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMLogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMLogin/Pods-MVVMLogin.debug.xcconfig"; sourceTree = "<group>"; };
@@ -118,10 +122,11 @@
 		2B07C5D31E45B1D800DBF1A4 /* MVVMLogin */ = {
 			isa = PBXGroup;
 			children = (
+				2B07C6101E45B84F00DBF1A4 /* Application */,
 				2B07C6041E45B36D00DBF1A4 /* Models */,
 				2B07C6021E45B36200DBF1A4 /* Views */,
 				2B07C6031E45B36900DBF1A4 /* ViewModels */,
-				2B07C5D41E45B1D800DBF1A4 /* AppDelegate.swift */,
+				2B07C60F1E45B84A00DBF1A4 /* Vendor */,
 				2B07C5D81E45B1D800DBF1A4 /* Main.storyboard */,
 				2B07C5DB1E45B1D800DBF1A4 /* Assets.xcassets */,
 				2B07C5DD1E45B1D800DBF1A4 /* LaunchScreen.storyboard */,
@@ -186,6 +191,31 @@
 				2B07C60C1E45B6D700DBF1A4 /* OXPLoginViewController.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		2B07C60F1E45B84A00DBF1A4 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				2B07C6111E45B88700DBF1A4 /* Rx */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		2B07C6101E45B84F00DBF1A4 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				2B07C5D41E45B1D800DBF1A4 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		2B07C6111E45B88700DBF1A4 /* Rx */ = {
+			isa = PBXGroup;
+			children = (
+				2B07C6121E45B88700DBF1A4 /* ObservableConvertibleType+Void.swift */,
+				2B07C6131E45B88700DBF1A4 /* RxOperators.swift */,
+			);
+			path = Rx;
 			sourceTree = "<group>";
 		};
 		2DCD8A94E7F4458C76BE08C4 /* Pods */ = {
@@ -497,7 +527,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B07C6081E45B46600DBF1A4 /* OXPLoginViewModel.swift in Sources */,
+				2B07C6141E45B88700DBF1A4 /* ObservableConvertibleType+Void.swift in Sources */,
 				2B07C5D51E45B1D800DBF1A4 /* AppDelegate.swift in Sources */,
+				2B07C6151E45B88700DBF1A4 /* RxOperators.swift in Sources */,
 				2B07C60E1E45B6D700DBF1A4 /* OXPLoginViewController.swift in Sources */,
 				2B07C60D1E45B6D700DBF1A4 /* OXPBaseViewController.swift in Sources */,
 			);
