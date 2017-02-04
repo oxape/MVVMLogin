@@ -1,0 +1,6 @@
+framework module Pods_MVVMLoginTests {
+  umbrella header "Pods-MVVMLoginTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
