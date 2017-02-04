@@ -15,6 +15,9 @@ target 'MVVMLogin' do
   #Layout
   pod 'SnapKit'
   
+  #UI Control
+  pod 'MBProgressHUD', '~> 1.0.0'
+  
   target 'MVVMLoginTests' do
     inherit! :search_paths
     # Pods for testing

@@ -8,6 +8,7 @@
 
 import UIKit
 import SnapKit
+import MBProgressHUD
 
 class OXPLoginViewController: OXPBaseViewController {
 
@@ -126,18 +127,19 @@ class OXPLoginViewController: OXPBaseViewController {
         .drive(self.activityView.rx.isAnimating)
         .addDisposableTo(self.disposeBag)
         
-//        viewModel
-//        .activityIndicator.asDriver()
-//        .debug()
-//        .distinctUntilChanged()
-//        .drive(onNext: { [unowned self] active in
-//                    if (active){
-//                        self.activityView.startAnimating()
-//                    } else {
-//                        self.activityView.stopAnimating()
-//                    }
-//                })
-//        .addDisposableTo(self.disposeBag)
+        
+        viewModel
+        .activityIndicator.asDriver()
+        .debug()
+        .distinctUntilChanged()
+        .drive(onNext: { active in
+                    if (active){
+                        MBProgressHUD.showAdded(to: ((UIApplication.shared.delegate?.window)!)!, animated: true)
+                    } else {
+                        MBProgressHUD.hide(for:((UIApplication.shared.delegate?.window)!)!, animated: true)
+                    }
+                })
+        .addDisposableTo(self.disposeBag)
     }
 }
 

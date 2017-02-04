@@ -65,6 +65,7 @@
 		2B07C6131E45B88700DBF1A4 /* RxOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxOperators.swift; sourceTree = "<group>"; };
 		2B07C6171E45C28000DBF1A4 /* AuthProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthProtocol.swift; sourceTree = "<group>"; };
 		2B07C6191E45C36500DBF1A4 /* OXPAuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OXPAuthService.swift; sourceTree = "<group>"; };
+		2B07C61C1E45CC7300DBF1A4 /* MVVMLogin-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MVVMLogin-Bridging-Header.h"; sourceTree = "<group>"; };
 		3CC48564CE5550602E04528F /* Pods-MVVMLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMLogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMLogin/Pods-MVVMLogin.release.xcconfig"; sourceTree = "<group>"; };
 		47E159BCC3FFB1508A3E9577 /* Pods-MVVMLoginUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMLoginUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMLoginUITests/Pods-MVVMLoginUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9633A172D1F98AB98E4AF7E0 /* Pods-MVVMLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMLogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMLogin/Pods-MVVMLogin.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +133,7 @@
 				2B07C6031E45B36900DBF1A4 /* ViewModels */,
 				2B07C6161E45C25100DBF1A4 /* Service */,
 				2B07C60F1E45B84A00DBF1A4 /* Vendor */,
+				2B07C61B1E45CC4D00DBF1A4 /* Supporting Files */,
 				2B07C5D81E45B1D800DBF1A4 /* Main.storyboard */,
 				2B07C5DB1E45B1D800DBF1A4 /* Assets.xcassets */,
 				2B07C5DD1E45B1D800DBF1A4 /* LaunchScreen.storyboard */,
@@ -230,6 +232,14 @@
 				2B07C6191E45C36500DBF1A4 /* OXPAuthService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		2B07C61B1E45CC4D00DBF1A4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B07C61C1E45CC7300DBF1A4 /* MVVMLogin-Bridging-Header.h */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		2DCD8A94E7F4458C76BE08C4 /* Pods */ = {
